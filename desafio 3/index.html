@@ -1,0 +1,25 @@
+<canvas width="800" height="600"></canvas>
+<h2>Desafio 3 Quiero ser Alumni</h2>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "Lightblue";
+    pincel.fillRect(0,0,600,400);
+
+    pincel.fillStyle = "White";
+    pincel.fillRect(0,200,600,200);
+
+    pincel.fillStyle = "Lightblue";
+    pincel.fillRect(0,400,600,300);
+
+    var imagen = new Image();
+    imagen.src = "Sol.png";
+    imagen.onload = function(){
+        pincel.drawImage(imagen, 200,210)
+    }
+
+
+</script>

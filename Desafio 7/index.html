@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+    <h2>Desafio 7- Quiero ser Alumni</h2>
+
+    <p>Instructores de Alura</p>
+
+    <p id="mostrar"></p>
+
+    <script>
+        let text ="";
+        var nombres = ["Christian", "Diego","Priscila","Elizabeth","Gustavo","Ana"];
+        nombres.forEach(instructores);
+
+        document.getElementById("mostrar").innerHTML = text;
+
+        function instructores(item, index) {
+            text += index +": "+ item+" es intructor de Alura."+"<br>";
+        }
+    </script>
+</body>
+</html>
